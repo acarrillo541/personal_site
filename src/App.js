@@ -1,22 +1,27 @@
-import logo from './logo.svg';
-import './App.css';
+//import Button from 'react-bootstrap/Button';
+//import MDBBtn from 'mdb-react-ui-kit';
+import  { MDBBtn, MDBIcon } from 'mdb-react-ui-kit';
+
+
 
 function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
+        <button>hello</button>
+        <MDBBtn floating size='lg' style={{ backgroundColor: '#333333' }} >
+          <MDBIcon fab icon='github'/>
+        </MDBBtn>
+        <MDBBtn floating size='lg' style={{ backgroundColor: '#dd4b39' }} >
+          <MDBIcon fab icon='google'/>
+        </MDBBtn>
+        <MDBBtn floating size='lg' style={{ backgroundColor: '#0082ca' }} >
+          <MDBIcon fab icon='linkedin'/>
+        </MDBBtn>
+        
         <p>
-          Edit <code>src/App.js</code> and save to reload.
+          Starting from here
         </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
       </header>
     </div>
   );
