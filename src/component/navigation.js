@@ -24,7 +24,7 @@ const Navigation = () => {
             <MDBNavbar>
                 {/* <!--Navbar container wrapper-->*/}
                 <MDBContainer >
-                    <MDBNavbarBrand>Alan Carrillo</MDBNavbarBrand>
+                    <MDBNavbarBrand>Alan Carrillo Personal Site</MDBNavbarBrand>
                     <MDBListGroup horizontal>
                         <Btn type="github" color="#333333" link="https://www.github.com/acarrillo541"/>
                         <Btn type="google" color="#dd4b39" link="https://www.google.com"/>
