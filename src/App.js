@@ -14,7 +14,8 @@ const backgroundStyle={
 
 function App() {
   return (
-    <div style={backgroundStyle}>
+    <div  className='fixed' style={backgroundStyle}>
+
       <Layout/>
     </div>
   );

@@ -10,13 +10,13 @@ import {
 const Navbar=()=>{
     return(
         <>
-            <MDBNavbar className='p-4 fixed' style={{backgroundColor:'#21081a'}}>
+            <MDBNavbar className='p-4 fixed' style={{backgroundColor:'transparent'}}>
                 <MDBContainer fluid>
-                    <MDBNavbarBrand className='text-white'>Alan Carrillo</MDBNavbarBrand>
+                    <MDBNavbarBrand className='text-white fw-bold fs-3'>Alan Carrillo</MDBNavbarBrand>
                     <MDBNavbarToggler
                         type='button'
                     >
-                        <MDBIcon className='text-white' icon='bars'/>
+                        <MDBIcon  size='lg' className='text-white' icon='bars'/>
                     </MDBNavbarToggler>
                 </MDBContainer>
             </MDBNavbar>
@@ -24,3 +24,4 @@ const Navbar=()=>{
     );
 }
 export default Navbar;
+

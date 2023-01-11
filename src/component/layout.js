@@ -1,10 +1,12 @@
 import Footer from "./footer";
 import Navbar from "./navbar";
+import Body from "./body";
 
 const Layout = ({children}) => {
     return (
         <>
             <Navbar/>
+            <Body/>
             <Footer/>
         </>
     );
