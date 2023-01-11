@@ -9,7 +9,7 @@ import { MDBBtn, MDBContainer, MDBIcon, MDBListGroup, MDBListGroupItem, MDBFoote
 
 const Btn = ({type, color, link}) =>{
     return (
-        <MDBListGroupItem noBorders style={{ backgroundColor: '#21081a' }}>
+        <MDBListGroupItem noBorders style={{backgroundColor: 'transparent'}}>
             <MDBBtn href={link} target="_blank" floating size='md' style={{ backgroundColor: color }} >
                 <MDBIcon fab icon={type}/>
             </MDBBtn>
@@ -22,7 +22,7 @@ const Footer = () => {
     return(
         <>
             {/* <!--Footbar-->*/}
-            <MDBFooter className='p-4 fixed-bottom' style={{ backgroundColor: '#21081a' }}>
+            <MDBFooter className='p-4 fixed-bottom'>
                 {/* <!--right align social media buttons-->*/}
                 <MDBListGroup horizontal>
                     <MDBContainer className='d-flex justify-content-start align-items-center'>
