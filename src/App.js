@@ -10,12 +10,12 @@ const backgroundStyle={
   backgroundPosition: 'center',
   backgroundSize: 'cover',
   backgroundRepeat: 'no-repeat',
+  overflow:'auto'
 }
 
 function App() {
   return (
     <div  className='fixed' style={backgroundStyle}>
-
       <Layout/>
     </div>
   );
