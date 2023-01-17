@@ -22,7 +22,7 @@ const Footer = () => {
     return(
         <>
             {/* <!--Footbar-->*/}
-            <MDBFooter className='p-4 fixed-bottom'>
+            <MDBFooter className='p-3 fixed'>
                 {/* <!--right align social media buttons-->*/}
                 <MDBListGroup horizontal>
                     <MDBContainer className='d-flex justify-content-start align-items-center'>
