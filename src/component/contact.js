@@ -3,7 +3,7 @@ import "./../styles.css";
 import React, { useState } from "react";
 
 export default function Contact(){
-    const [name, setName]=useState([]);
+    
 
     return(
     <>
@@ -11,7 +11,7 @@ export default function Contact(){
         <MDBContainer className="bg-dark">
             <h2>Get In Touch</h2>
             <form>
-                <MDBInput label="Name"/>
+                <MDBInput label="Name" />
                 <MDBInput label="Email address"/>
                 <MDBInput label="Message"/>
             </form>
