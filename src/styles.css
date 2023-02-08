@@ -1,10 +1,13 @@
-h1{
+.bigHeader{
     padding: 1;
-    font-weight: bold;
+    font-size: 3.625rem;
+    line-height: 1.15;
+    font-weight: 550;
+    color: #fff;
 }
 
 .box{
-    padding: 2em;
+    padding-top: 2em;
 }
 
 .box1{

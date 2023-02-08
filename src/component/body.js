@@ -1,7 +1,6 @@
 //import React, {useState} from 'react';
 import Contact from "./contact";
 import Experience from "./experience";
-import "../App.css"
 
 import {
     MDBCol

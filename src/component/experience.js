@@ -9,7 +9,7 @@ import Project from "./project";
 export default function Experience(){
     return(
     <>
-        <h1 className='p-4 display-3 fw-bold' >Experience</h1>
+        <h1 class='bigHeader'>Experience</h1>
             <MDBRow >
                 <MDBCol md={8} >
                     <MDBListGroup style={{backgroundColor:'grey'}}>

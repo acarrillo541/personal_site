@@ -24,9 +24,8 @@ const Navbar=()=>{
                 <MDBContainer fluid >
                     <MDBCol className='d-flex justify-content-start align-items-center' >
                         <MDBNavbarBrand className='text-white fw-bold fs-3'>Alan Carrillo</MDBNavbarBrand>
-                        <MDBNavbarLink>Work</MDBNavbarLink>
-                        <MDBNavbarLink>About</MDBNavbarLink>
-                        <MDBNavbarLink>Contact</MDBNavbarLink>
+                        <MDBNavbarLink>Experience</MDBNavbarLink>
+                        <MDBNavbarLink>Contact Me</MDBNavbarLink>
                     </MDBCol>
                     <MDBCol className='d-flex justify-content-end align-items-center' >
                         <Btn type="github" color="#333333" link="https://www.github.com/acarrillo541"/>
