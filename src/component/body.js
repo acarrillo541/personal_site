@@ -3,24 +3,19 @@ import Contact from "./contact";
 import Experience from "./experience";
 
 import {
-    MDBCol
+    MDBCol, MDBRow
 } from 'mdb-react-ui-kit';
 
 
 const Body = () =>{
 
     return(
-        <div className='d-flex align-items-start '>
-            <MDBCol md={2} style={{backgroundColor:"red"}}>one</MDBCol>
-
-            <MDBCol md={8} className='text-white'>
+        <span className="d-flex justify-content-center">
+            <div className="d-flex flex-column justify-content-center w-75" >
                 <Experience/>
                 <Contact/>
-            </MDBCol>
-
-            <MDBCol md={2} style={{backgroundColor:"blue"}}>onne</MDBCol>
-
-        </div>
+            </div>
+        </span>
     );
 }
 

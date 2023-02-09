@@ -19,9 +19,9 @@ const Navbar=()=>{
     return(
         <>
             <MDBNavbar  style={{backgroundColor:'transparent'}}>
-               <h3 style={{whiteSpace:'pre-line'}} className="fw-bolder text-white ms-3 lh-1">
+               <h2 style={{whiteSpace:'pre-line'}} className="fw-bolder text-white ms-4 mt-3 lh-1">
                     Alan{"\n"}Carrillo
-                </h3>
+                </h2>
                     <MDBNavbarLink>Experience</MDBNavbarLink>
                     <MDBNavbarLink>Contact Me</MDBNavbarLink>
               

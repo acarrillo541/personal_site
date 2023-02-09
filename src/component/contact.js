@@ -1,4 +1,4 @@
-import { MDBBtn, MDBCol, MDBContainer, MDBInput , MDBTextArea} from "mdb-react-ui-kit";
+import { MDBBtn, MDBContainer, MDBInput , MDBTextArea} from "mdb-react-ui-kit";
 import React, { useState } from "react";
 
 export default function Contact(){
