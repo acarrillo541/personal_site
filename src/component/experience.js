@@ -9,17 +9,17 @@ import Project from "./project";
 export default function Experience(){
     return(
     <>
-        <h1 class='bigHeader'>Experience</h1>
+        <h1 class='bigHeader'>Projects</h1>
             <MDBRow >
                 <MDBCol md={8} >
-                    <MDBListGroup style={{backgroundColor:'grey'}}>
-                        <MDBListGroupItem className='pb-5 mb-1 ' style={{backgroundColor:'black'}}>                     
+                    <MDBListGroup className="grid gap-2" style={{backgroundColor:'transparent'}}>
+                        <MDBListGroupItem style={{backgroundColor:'#9C9C9C'}}>                     
                             <Project/>
                         </MDBListGroupItem>
-                        <MDBListGroupItem className=' mb-1' style={{backgroundColor:'black'}}>
+                        <MDBListGroupItem  style={{backgroundColor:'white'}}>
                             <Project/>
                         </MDBListGroupItem>
-                        <MDBListGroupItem className=' mb-1' style={{backgroundColor:'black'}}>
+                        <MDBListGroupItem style={{backgroundColor:'#2B7A78'}}>
                             <Project/>
                         </MDBListGroupItem>
                     </MDBListGroup>

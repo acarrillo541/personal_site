@@ -6,9 +6,11 @@ import "./../styles.css";
 const Layout = ({children}) => {
     return (
         <>
+        <div style={{backgroundColor:'#3AAFA9'}} >
             <Navbar/>
             <Body/>
             <Footer/>
+        </div>
         </>
     );
 }

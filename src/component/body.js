@@ -10,7 +10,7 @@ import {
 const Body = () =>{
 
     return(
-        <div className='d-flex align-items-start ' >
+        <div className='d-flex align-items-start '>
             <MDBCol md={2} style={{backgroundColor:"red"}}>one</MDBCol>
 
             <MDBCol md={8} className='text-white'>
