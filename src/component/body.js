@@ -1,6 +1,7 @@
 //import React, {useState} from 'react';
 import Contact from "./contact";
 import Experience from "./experience";
+import "./../styles.css";
 
 import {
     MDBCol, MDBRow
@@ -10,13 +11,17 @@ import {
 const Body = () =>{
 
     return(
-        <span className="d-flex justify-content-center">
-            <div className="d-flex flex-column justify-content-center w-75" >
-                <Experience/>
-                <Contact/>
+    <>
+            <div class='body-part'>
+                <div className="w-75">
+                    <Experience/>
+                </div>
+                <div className="w-75">
+                    <Contact/>
+                </div>
             </div>
-        </span>
-    );
+    </>
+);
 }
 
 export default Body;
