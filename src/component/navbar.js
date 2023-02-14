@@ -7,6 +7,7 @@ import {
     MDBTabsItem,
     MDBTabsLink,
 } from 'mdb-react-ui-kit';
+import {Link} from 'react-scroll';
 
 const Btn = ({type, color, link}) =>{
     return (
@@ -23,32 +24,34 @@ const Navbar=(props)=>{
 
     function handleTab(page){
         setTab(page);
-        props.changeTab(page);
     }
 
     const TabItem = ({label})=>{
         return(
             <MDBTabsItem>
+                
+<Link activeClass="active" smooth spy to={label}>
                 <MDBTabsLink className='text-white' style={{backgroundColor:'transparent'}} 
-                            onClick={()=>handleTab(label)} active={tab===label}>
+                            onClick={()=>handleTab(label)} active={tab===label} >
                     {label}
-                </MDBTabsLink>
-            </MDBTabsItem>
-        );
-    }
+                    
+                </MDBTabsLink></Link>
+        </MDBTabsItem>
+    );
+}
 
 
-    return(
-        <>
-            <MDBNavbar style={{backgroundColor:'transparent', boxShadow:"none"}}>
-                 <h2 style={{whiteSpace:'pre-line'}} 
-                    className="fw-bolder text-white ms-4 mt-3 lh-1">
-                    Alan{"\n"}Carrillo
-                </h2>
+return(
+    <>
+        <MDBNavbar style={{backgroundColor:'transparent', boxShadow:"none"}}>
+                <h2 style={{whiteSpace:'pre-line'}} 
+                className="fw-bolder text-white ms-4 mt-3 lh-1">
+                Alan{"\n"}Carrillo
+            </h2>
 
-                <div className='d-flex justify-content-end me-4' >
-                    <MDBTabs>
-                        <TabItem label={'Home'}/>
+            <div className='d-flex justify-content-end me-4' >
+                <MDBTabs>
+                    <TabItem label={'Home'}/>
                         <TabItem label={'Projects'}/>
                         <TabItem label={'Contact'}/>
                     </MDBTabs>
