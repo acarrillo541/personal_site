@@ -9,7 +9,7 @@ import Project from "./project";
 export default function Experience(){
     return(
     <>
-        <h1 class='bigHeader'>Projects</h1>
+        <h1 className='bigHeader'>Projects</h1>
             <MDBRow >
                 <MDBCol md={12} >
                     <MDBListGroup className="grid gap-2" style={{backgroundColor:'transparent'}}>
