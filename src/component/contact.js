@@ -16,7 +16,7 @@ export default function Contact(){
     return(
     <>
         <MDBContainer className="box">
-            <h1 className="bigHeader text-black">Contact Me</h1>
+            <h1 className="bigHeader">Contact Me</h1>
             <MDBContainer className='box1'>
                     <h2>Get In Touch</h2>
                     <form onSubmit={handleSubmit} method="POST" target="_blank" 

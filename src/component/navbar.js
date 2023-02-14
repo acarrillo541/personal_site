@@ -20,7 +20,7 @@ const Btn = ({type, color, link}) =>{
 
 
 const Navbar=(props)=>{
-    const [tab, setTab] = useState(props.currTab);
+    const [tab, setTab] = useState('Home');
 
     function handleTab(page){
         setTab(page);
@@ -30,20 +30,21 @@ const Navbar=(props)=>{
         return(
             <MDBTabsItem>
                 
-<Link activeClass="active" smooth spy to={label}>
-                <MDBTabsLink className='text-white' style={{backgroundColor:'transparent'}} 
+                <Link activeClass="active" smooth spy to={label}>
+                    <MDBTabsLink className='text-white' style={{backgroundColor:'transparent'}} 
                             onClick={()=>handleTab(label)} active={tab===label} >
-                    {label}
+                        {label}
                     
-                </MDBTabsLink></Link>
-        </MDBTabsItem>
+                    </MDBTabsLink>
+                </Link>
+            </MDBTabsItem>
     );
 }
 
 
 return(
     <>
-        <MDBNavbar style={{backgroundColor:'transparent', boxShadow:"none"}}>
+        <MDBNavbar  style={{backgroundColor:'transparent', boxShadow:"none"}}>
                 <h2 style={{whiteSpace:'pre-line'}} 
                 className="fw-bolder text-white ms-4 mt-3 lh-1">
                 Alan{"\n"}Carrillo
