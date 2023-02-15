@@ -9,13 +9,13 @@ const Body = () =>{
     return(
     <>
             <div className='body-part'>
-                <section className="w-75 scrollable" id='Home'>
+                <section className="w-75" id='Home'>
                     <Home/>
                 </section>
-                <section className="w-75 scrollable" id='Projects'>
+                <section className="w-75" id='Projects'>
                     <Experience/>
                 </section>
-                <section className="w-75 scrollable" id='Contact'>
+                <section className="w-100 d-flex justify-content-center" id='Contact'>
                     <Contact/>
                 </section>
             </div>

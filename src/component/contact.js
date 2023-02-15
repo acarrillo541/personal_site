@@ -1,5 +1,6 @@
-import { MDBBtn, MDBContainer, MDBInput , MDBTextArea} from "mdb-react-ui-kit";
+import { MDBBtn, MDBCol, MDBRow, MDBInput , MDBTextArea, MDBIcon} from "mdb-react-ui-kit";
 import React, { useState } from "react";
+import "./../styles.css";
 
 export default function Contact(){
     const [form, setForm] = useState({ 
@@ -13,38 +14,60 @@ export default function Contact(){
 
     }
 
+    const Label = ({info})=>{
+        return(
+            <>
+            <div className="w-75 rounded-4 text-white mb-3 d-flex align-items-center p-3" style={{backgroundColor:"#3AAFA9", height:'55px'}}>
+                <MDBBtn floating className="me-2" style={{backgroundColor:'transparent'}}>
+                    <MDBIcon icon="phone"/>
+                </MDBBtn>
+                {info}
+            </div>
+            </>
+        );
+    }
+
     return(
     <>
-        <MDBContainer className="box">
+        <div className="contactPage">
             <h1 className="bigHeader">Contact Me</h1>
-            <MDBContainer className='box1'>
-                    <h2>Get In Touch</h2>
+            <div className="grid-div">
+                <div>
+                    <Label info="(510)427-0899" />
+                    <Label info="acarrillo4@csuchico.edu" />
+                    <Label info="acarrillo541" />
+                </div>
+                <div className="verticalLine"/>
+                <div>
+                    <h2 className='text-white fw-bold'>Get In Touch</h2>
                     <form onSubmit={handleSubmit} method="POST" target="_blank" 
-                        className="w-50 rounded-9 p-4 bg-light ">
-                            <MDBInput label="Name" value={form.name} className="mb-3"
-                                onChange={ e => {
-                                    setForm({...form, name:e.target.value});
-                                }}
-                            />
+                        className="rounded-9">
 
-                       <MDBInput label="Email address" value={form.email} className="mb-3"
+                        <MDBInput label="Name" value={form.name} className="mb-3 bg-white"
+                            onChange={ e => {
+                                setForm({...form, name:e.target.value});
+                            }}
+                        />
+
+                       <MDBInput label="Email address" value={form.email} className="mb-3 bg-white"
                             onChange={ e => {
                                 setForm({...form, email:e.target.value});
                             }}
                         />
-                        <MDBTextArea label="Message" value={form.message} className="mb-3"
+                        <MDBTextArea label="Message" value={form.message} className="mb-3 bg-white"
                             rows={5} 
                             onChange={ e => {
                                 setForm({...form, message:e.target.value});
                             }}
                         />
-                        <MDBBtn className="w-100" type="submit" >Submit</MDBBtn>
+                        <MDBBtn className="w-100" type="submit" style={{backgroundColor:'#2B7A78'}}>Submit</MDBBtn>
                     </form>
                     <p>{form.name}</p>
                     <p>{form.email}</p>
                     <p>{form.message}</p>
-            </MDBContainer>
-        </MDBContainer>
+                </div>
+            </div>
+        </div>
     </>
     );
 }
