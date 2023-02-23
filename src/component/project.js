@@ -29,6 +29,7 @@ const Project=()=>{
                 </div>
             </MDBCol>
         </MDBRow>
+
     );
 }
 export default Project;

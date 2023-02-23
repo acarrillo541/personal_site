@@ -1,7 +1,10 @@
 .homePage{
-    height: 90vh;
-    margin-top: 10vh;
-    width: 60%;
+    height: 80vh;
+    margin-bottom: 20vh;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    overflow: hidden;
 }
 
 .home-body{
@@ -9,6 +12,16 @@
     font-size: 1.5rem;
     width:70%
 }
+
+.page{
+    display: flex;
+    align-self: center;
+    justify-self: center;
+    background-color: #17252A;
+    overflow: hidden;
+    margin: 2%;
+}
+
 
 .bigHeader{
     padding: 1;

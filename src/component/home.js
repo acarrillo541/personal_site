@@ -1,6 +1,14 @@
 import "./../styles.css";
+import { useState } from "react";
+import path from "./../Resume_acarrillo4.pdf";
+import { Document, Page, pdfjs } from "react-pdf";
+import "react-pdf/dist/esm/Page/TextLayer.css";
+import { Button } from "react-bootstrap";
+pdfjs.GlobalWorkerOptions.workerSrc = `https://cdnjs.cloudflare.com/ajax/libs/pdf.js/${pdfjs.version}/pdf.worker.js`;
 
 export default function Home(){
+    const [showBtn,setBtn] = useState(false);
+    
     return(
     <>
     <div className="homePage">
@@ -12,6 +20,21 @@ export default function Home(){
                 I am a software developer based out of the San Francisco Bay Area
                 with a passion for making ideas come to life.
             </p>
+        </div>
+        <div className="d-flex justify-content-center" style={{backgroundColor:"transparent"}} 
+            onMouseEnter={()=>{setBtn(true)}}
+            onMouseLeave={()=>{setBtn(false)}}
+        >
+            <div className="page rounded-9" >
+                <Document  file={path} onLoadError={console.error}  >
+                    <Page   scale={0.75} pageNumber={1} renderTextLayer={false} renderAnnotationLayer={false}/>
+                </Document>
+            </div>
+            { showBtn &&
+                <Button style={{position:'absolute',alignSelf:'center'}}>hello</Button>
+            }
+
+
         </div>
     </div>
     </>
