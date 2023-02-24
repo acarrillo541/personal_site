@@ -3,7 +3,7 @@ import { useState } from "react";
 import path from "./../Resume_acarrillo4.pdf";
 import { Document, Page, pdfjs } from "react-pdf";
 import "react-pdf/dist/esm/Page/TextLayer.css";
-import { Button } from "react-bootstrap";
+import { MDBBtn, MDBIcon } from 'mdb-react-ui-kit'
 pdfjs.GlobalWorkerOptions.workerSrc = `https://cdnjs.cloudflare.com/ajax/libs/pdf.js/${pdfjs.version}/pdf.worker.js`;
 
 export default function Home(){
@@ -12,7 +12,7 @@ export default function Home(){
     return(
     <>
     <div className="homePage">
-        <div className="rounded-9 p-5" style={{backgroundColor:"#DEF2F1"}}>
+        <div className="rounded-9 p-5" style={{backgroundColor:"#DEF2F1", maxWidth:'60%'}}>
             <p className="home-body">Hello, my name is</p>
             <h1 className="bigHeader" style={{color:'#3AAFA9'}}>Alan Carrillo.</h1>
             <h1 className="bigHeader" style={{color:'#2B7A78'}}>I build web and mobile apps.</h1>
@@ -25,16 +25,26 @@ export default function Home(){
             onMouseEnter={()=>{setBtn(true)}}
             onMouseLeave={()=>{setBtn(false)}}
         >
-            <div className="page rounded-9" >
+            
+            { !showBtn?
+            <div className="rounded-9 page" >
                 <Document  file={path} onLoadError={console.error}  >
                     <Page   scale={0.75} pageNumber={1} renderTextLayer={false} renderAnnotationLayer={false}/>
                 </Document>
-            </div>
-            { showBtn &&
-                <Button style={{position:'absolute',alignSelf:'center'}}>hello</Button>
+            </div>:
+            <>
+                <div className="rounded-9 page hoverable" >
+                    <Document  file={path} onLoadError={console.error}  >
+                        <Page   scale={0.75} pageNumber={1} renderTextLayer={false} renderAnnotationLayer={false}/>
+                    </Document>
+                </div>
+                <MDBBtn size='lg' style={{position:'absolute', backgroundColor: '#dd4b39', alignSelf:"center"}}
+                                href={path} target='_blank'
+                >
+                    Download Resume <MDBIcon icon='arrow-right' className='ms-2'/>
+                </MDBBtn>
+            </>
             }
-
-
         </div>
     </div>
     </>
