@@ -35,8 +35,8 @@ export default function Contact(){
             <h1 className="bigHeader">Contact Me</h1>
             <div className="grid-div">
                 <div className="centered-div">
-                    <Label info="(510)427-0899" logo="phone"/>
-                    <Label info="acarrillo4@csuchico.edu"  logo="envelope"/>
+                    <Label info="(xxx)xxx-xxxx" logo="phone"/>
+                    <Label info="carrillo296alan@gmail.com"  logo="envelope"/>
                 </div>
                 <div className="verticalLine"/>
                 <div>
@@ -63,9 +63,6 @@ export default function Contact(){
                         />
                         <MDBBtn className="w-100" type="submit" style={{backgroundColor:'#2B7A78'}}>Submit</MDBBtn>
                     </form>
-                    <p>{form.name}</p>
-                    <p>{form.email}</p>
-                    <p>{form.message}</p>
                 </div>
             </div>
         </div>

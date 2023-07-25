@@ -18,8 +18,9 @@ export default function Home(){
             <h1 className="bigHeader" style={{color:'#2B7A78'}}>I build web and mobile apps.</h1>
             <p className="home-body">
                 I am a software developer based out of the San Francisco Bay Area
-                with a passion for making ideas come to life.
+                with a passion for making ideas come to life. 
             </p>
+            <p className="text-danger fw-bold">Website still under construction!</p>
         </div>
         <div className="d-flex justify-content-center" style={{backgroundColor:"transparent"}} 
             onMouseEnter={()=>{setBtn(true)}}
